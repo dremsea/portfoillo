@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    
+    <link rel="stylesheet" href="templatemo-glossy-touch.css">
+<!--
+
+TemplateMo 592 glossy touch
+
+https://templatemo.com/tm-592-glossy-touch
+
+-->
+    <style>
+        .form-status {
+            margin-top: 12px;
+            padding: 10px 12px;
+            font-size: 0.95rem;
+            border-radius: 10px;
+            display: none;
+        }
+
+        .form-status.success {
+            display: block;
+            background: rgba(34, 197, 94, 0.12);
+            border: 1px solid rgba(34, 197, 94, 0.4);
+            color: #d1fae5;
+        }
+
+        .form-status.error {
+            display: block;
+            background: rgba(239, 68, 68, 0.12);
+            border: 1px solid rgba(239, 68, 68, 0.4);
+            color: #fecaca;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <!-- SINGLE NAVIGATION HEADER -->
+    <header class="header">
+        <div class="container">
+            <nav class="glass">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 48 48" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Grille de cercles avec différentes tailles -->
+                            <circle cx="16" cy="16" r="5" opacity="0.9"/>
+                            <circle cx="32" cy="16" r="4" opacity="0.8"/>
+                            <circle cx="16" cy="32" r="4" opacity="0.7"/>
+                            <circle cx="32" cy="32" r="5" opacity="0.85"/>
+                            <!-- Petits points décoratifs -->
+                            <circle cx="24" cy="8" r="2" opacity="1"/>
+                            <circle cx="8" cy="24" r="2" opacity="0.9"/>
+                            <circle cx="40" cy="24" r="2" opacity="0.9"/>
+                            <circle cx="24" cy="40" r="2" opacity="1"/>
+                            <!-- Petits points d’angle -->
+                            <circle cx="8" cy="8" r="1" opacity="0.6"/>
+                            <circle cx="40" cy="8" r="1" opacity="0.6"/>
+                            <circle cx="8" cy="40" r="1" opacity="0.6"/>
+                            <circle cx="40" cy="40" r="1" opacity="0.6"/>
+                        </svg>
+                    </div>
+                    <span>Charrier Tudal</span>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">Accueil</a>
+                    <a href="Experience.html">Expérience</a>
+                    <a href="competences.html">Compétences</a>
+                    <a href="Contact.html">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTACT PAGE -->
+    <div class="page">
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="contact-grid">
+                    <div class="contact-form glass">
+                        <h2>Me contacter</h2>
+                        <form id="contactForm" action="https://formsubmit.co/ajax/charriertudal2410@gmail.com" method="POST">
+                            <input type="hidden" name="_subject" value="Nouveau message depuis le site">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+                            <div class="form-group">
+                                <label for="name">Nom - Prénom</label>
+                                <input type="text" id="name" name="prenom" placeholder="Entrez votre prénom" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="Sujet">Sujet</label>
+                                <input type="text" id="Sujet" name="sujet" placeholder="Quel est le sujet de votre message ?" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" placeholder="Écrivez votre message" required></textarea>
+                            </div>
+                            <button type="submit" class="cta-button">Envoyer votre message</button>
+                            <div id="formStatus" class="form-status" aria-live="polite"></div>
+                        </form>
+                    </div>
+
+                    <div class="contact-info glass">
+                        <h2>Informations et contact</h2>
+                        
+                        <div class="contact-item">
+                            <div class="contact-item-icon">📧</div>
+                            <div class="contact-item-text">
+                                <h4>Email</h4>
+                                <p>charriertudal2410@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-item-icon">📞</div>
+                            <div class="contact-item-text">
+                                <h4>Tél.</h4>
+                                <p>+33 6 18 14 63 19</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-item-icon">📍</div>
+                            <div class="contact-item-text">
+                                <h4>Adresse</h4>
+                                <p>6 rue de la Fontaine aux Loups<br>Sèvremont, 85700</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <img src="images/image_2025-10-11_220653585-removebg-preview.png" width="50">
+                            </div>
+                            <div class="contact-item-text">
+                                <h4>Instagram</h4>
+                                <a rel="nofollow" href="https://www.instagram.com/charriertudal" target="_blank"><p>Charrier Tudal</p></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- SINGLE FOOTER -->
+    <div id="footer">
+        <div class="container">
+            <footer class="glass">
+                <div class="footer-content">
+                    <div class="footer-links">
+                        <a href="index.html">Accueil</a>
+                        <a href="Experience.html">Expérience</a>
+                        <a href="competences.html">Compétences</a>
+                        <a href="Contact.html">Contact</a>
+                    </div>
+                    <div class="copyright">
+                        &copy; 2025 Charrier Tudal — Saint-Gabriel Saint-Michel.<br> 
+                        <a rel="nofollow" href="https://www.saint-gab.com" target="_blank">Saint-Gabriel</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+<script src="templatemo-glossy-touch.js"></script>
+<script>
+    const form = document.getElementById('contactForm');
+    const formStatus = document.getElementById('formStatus');
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const formData = new FormData(form);
+
+        fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        .then(response => {
+            if (response.ok) {
+                form.reset();
+                formStatus.classList.add('success');
+                formStatus.classList.remove('error');
+                formStatus.innerHTML = 'Message envoyé avec succès !';
+            } else {
+                formStatus.classList.add('error');
+                formStatus.classList.remove('success');
+                formStatus.innerHTML = 'Erreur lors de l\'envoi du message. Veuillez réessayer.';
+            }
+        })
+        .catch(error => {
+            formStatus.classList.add('error');
+            formStatus.classList.remove('success');
+            formStatus.innerHTML = 'Erreur lors de l\'envoi du message. Veuillez réessayer.';
+        })
+        .finally(() => {
+            formStatus.style.display = 'block';
+            setTimeout(() => {
+                formStatus.style.display = 'none';
+            }, 5000);
+        });
+    });
+</script>
+</body>
+</html>
